@@ -2,6 +2,7 @@
 *{
     margin:0;
 }
+
 .nav{
     display: flex;
     align-items: row, center;
@@ -10,6 +11,7 @@
     font-family: 'Playfair Display', serif;
     color: #F9F9F9;
 }
+
 header{
     margin: 0;
     background-color: #4A4A4A;
@@ -18,9 +20,11 @@ header{
     display: flex;
     justify-content: space-between;
 }
+
 ul{
     margin: 30px;
 }
+
 .WE{
     background-color: #D9D9D9;
     font-family: 'Playfair Display', serif;
@@ -30,13 +34,16 @@ ul{
     height: 426px;
     width: 100vw;
 }
+
 p{
     font-size: 32px;
 }
+
 h1{
     font-size: 40px;
     margin-bottom: 20px;
 }
+
 .AboutUs{
     display: flex;
     flex-direction: column;
@@ -46,17 +53,20 @@ h1{
     margin-left: 100px;
     margin-top: 20px;
 }
+
 .img1{
     height: 99px;
     width: 131px;
     margin-top: 10px;
     margin-left: 10px
 }
+
 .img2{
     height: 310px;
     width: 480px;
     margin-right: 40px; 
 }
+
 .groupText{
     display: flex;
     align-items: row;
@@ -65,6 +75,7 @@ h1{
     margin-right: 2%;
     margin-left: 20px;
 }
+
 .groupImage{
     display: flex;
     align-items: row;
@@ -72,6 +83,7 @@ h1{
     height: 500px;
     margin:0
 }
+
 .group{
     display: flex;
     flex-direction: column;
@@ -81,26 +93,33 @@ h1{
     background-color: #817979;
     color: #FFFFFF;
 }
+
 .Images{
     width: 650px;
 }
+
 .Numbers{
     display: flex;
     align-items: row;    
+    margin-left: 40px;
+    margin-right: 40px;
 }
+
 .TopMusic{
     background-color: #484848;
     width: 100vw;
-    height: 760px;
     display: flex;
     flex-direction: column;
 }
+
 .group2{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100vw;
-   
+
 }
+
 .Group2text{
     display: flex;
     flex-direction: column;
@@ -108,30 +127,34 @@ h1{
     margin-bottom: 50px;
     color: #FFFFFF;
 }
+
 .groupname{
     margin-left: 200px;
 }
 .minigroup1{
     background-color: #995C5C;
-    width: 1440px;
-    height: 595px;
+    width: 32%;
+
 }
+
 .minigroup2{
     background-color: #454242;
-    width: 1440px;
-    height: 595px;
+    width: 32%;
+
 }
+
 .minigroup3{
     background-color: #8C5227;
-    width: 1440px;
-    height: 595px;
-}
+    width: 32%;
+}   
+
 li{
     font-size: 32px;
-    margin-top: 60px;
+    margin-top: 10px;
     margin-left: 30px;
     color: #FFFFFF;
 }
+
 footer{
     background-color: #2D2D2D;
     color:#FFFFFF;
@@ -141,6 +164,7 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+
 .footerC{
     width: 30px;
     height: 30px;
@@ -149,26 +173,35 @@ footer{
     align-items: row;
     width: 300px;
 }
+
 .footerB{
     display: flex;
     align-items: row;
 }
+
 .footerA{
     margin-right: 100px;
 }
+
 .icon{
     width: 50px;
     height: 50px;
 }
+
+.video{
+    width: 560px;
+    height: 315px;
+}
 .Enter{
     background-color: darkgrey;
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     height: 300px;
     width: 100vw;
 }
+
 .enterIcon{
     display: flex;
     justify-content: center;
@@ -181,6 +214,7 @@ footer{
     margin-top: 5px;
     
 }
+
 form{
     display: flex;
     flex-direction: column;
@@ -188,14 +222,190 @@ form{
     /* height: 150px; */
     margin-bottom: 40px;
 }
+
 .regDate{
     display: none;
 }
+
 input{
     margin: 5px;
     border-radius: 5px;
     height: 20px;
 }
+
 .EnterReg{
     margin: 10px;
+}
+
+a{
+    color: rgb(204, 199, 199);
+    text-decoration: none;
+}
+
+.regs{
+    background: none;
+    background-color: #2d2d2d00;
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+.Slider{
+   display: flex;
+   flex-direction: row;
+}
+
+#music{
+    margin-right: 20px;
+    
+}
+
+.menu_small_icon{
+    display: none;
+
+}
+
+.menu_small_item {
+    display: none;
+}   
+
+ .stick {
+    width: 80%;
+    height: 5px;
+    background: black;
+}
+
+@media(max-width: 425px){
+    p{
+        font-size: 14px;
+    }
+    .carousel_item{
+        width: 100vw;
+    }
+    .video{
+        width: 100vw;
+    }
+    
+    .group2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .minigroup1, .minigroup2, .minigroup3{
+        width: 100%;
+
+    }
+    li{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+
+    a{
+        font-size: 16px;
+    }
+
+    .IMGN{
+        width: 50px;
+        height: 50px;
+    }
+
+    .img2{
+        width: 200px;
+        height: 200px;
+        margin-right: 100px
+    }
+
+    body{
+        width: 100%;
+    }
+
+    .Images{
+        width: 250px;
+        height: 250px
+    }
+
+    .groupImage{
+        flex-direction: column;
+    }
+
+    .groupText{
+        width: 200px;
+        align-items: flex-start;
+        margin-left: 0px;
+        margin-right: 200px
+    }
+
+    .p1{
+        margin-right:50px;
+    }
+
+   .img1{
+    width: 100px;
+    height: 100px;
+    margin-left: 100px
+   }
+
+   footer{
+    height: 350px
+   }
+
+   .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: white;
+        transform: translateX(-100%);
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: white;
+        transform: translateX(-100%);
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
 }

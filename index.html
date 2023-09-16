@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <title>RockMusic</title>
 </head>
 <body>
     <header>
-        <img src="image 1 1.png" class="img1" alt="logo">
+        <img src="images/image 1 1.png" class="img1" alt="logo">
         <nav class="nav">
-            <ul>О нас</ul>
-            <ul>Подборка групп</ul>
-            <ul>Музыкальная подборка</ul>   
+            <ul><a class="scroll" href="#AboutUs">О нас</a></ul>
+            <ul><a class="scroll" href="#Group">Подборка групп</a></ul>
+            <ul><a class="scroll" href="#MusicTop">Музыкальная подборка</a></ul>  
+            <ul><button class="Regs">Вход</button></ul> 
         </nav>
     </header>
-    <section class="Enter">
+    <div class="menu_small_icon">
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+    </div>
+    <div class="menu-small">
+        <div class="menu_small_item"><a class="scroll" href="#AboutUs">О нас</a></div>
+        <div class="menu_small_item"><a class="scroll" href="#Group">Подборка групп</a></div>
+        <div class="menu_small_item"><a class="scroll" href="#MusicTop">Музыкальная подборка</a></div>
+        <div class="menu_small_item"><button class="Regs">Вход</button></div>
+    </div>
+    <section class="Enter" id="EnterID">
         <div class="enterIcon">
             <div class="EnterReg">
                 <button class="enter">
@@ -25,6 +41,7 @@
                     Регистрация
                 </button>
             </div>
+            <button class="escape" id="escape">Закрыть</button>
             <div class="enterDate" id="Ent">
                 <form>
                     <input name="name"  class="EnterName"   type="name" placeholder="Введите имя">
@@ -45,35 +62,35 @@
         
     </section>
     <section class="WE">
-        <div class="AboutUs">
+        <div class="AboutUs" id="AboutUs">
             <h1>О нас</h1>
             <article class="p1"><p>Мы показываем все музыкальные рок-новинки, а так же делимся всеми скандальными подробностями из жизни самых известных рок звезд.</p></article>
         </div>
-        <img src="image 2.png" class="img2" alt="img2">
+        <img src="images/image 2.png" class="img2" alt="img2">
     </section>
-    <section class="group">
+    <section class="group" id="Group">
         <h1>Ваши группы на сегодня</h1>
         <div class="groupText">
             <div class="Numbers">
-                <img src="1 1.png">
+                <img src="images/1 1.png" class="IMGN" alt="1" >
                 <p>RUMMSTEIN</p></div>
             <div class="Numbers">
-                <img src="2 1.png">
+                <img src="images/2 1.png" class="IMGN" alt="2">
                 <p>POWERWOLF</p>
             </div>
             <div class="Numbers">
-                <img src="3 1.png"> 
+                <img src="images/3 1.png" class="IMGN" alt="3"> 
                 <p>DISTURBED</p>  
             </div>
   
         </div>
         <div class="groupImage">
-            <img src="image 3.png" class="Images" alt="Rummstein">
-            <img src="image 4.png" class="Images" alt="PowerWolf">
-            <img src="image 5.png" class="Images" alt="Disturbed">           
+            <img src="images/image 3.png" class="Images" alt="Rummstein">
+            <img src="images/image 4.png" class="Images" alt="PowerWolf">
+            <img src="images/image 5.png" class="Images" alt="Disturbed">           
         </div> 
     </section>
-    <section class="TopMusic">
+    <section class="TopMusic" id="MusicTop">
         <article class="Group2text">
             <h1>Музыкальная подборка</h1>
             <p>Топ 5 самых популярных треков ваших сегодняшних групп</p>
@@ -82,44 +99,87 @@
             <div class="minigroup1">
                 <p class="groupname">RUMMSTEIN</p>
                     <li>Mutter</li>
+                    <audio src="songs/Mutter.mp3" controls id="music"></audio>
                     <li>Rosenrot</li>
+                    <audio src="songs/Rosenrot.mp3" controls id="music"></audio>
                     <li>Amerika</li>
+                    <audio src="songs/Amerika.mp3" controls id="music"></audio>
                     <li>Haifisch</li>
+                    <audio src="songs/Haifisch.mp3" controls id="music"></audio>
                     <li>Mein Herz Brent</li>
+                    <audio src="songs/Mein_Herz_brennt.mp3" controls id="music"></audio>
             </div>
             <div class="minigroup2">
                 <p class="groupname">POWERWOLF</p>
                     <li>Son of a Wolf</li>
+                    <audio src="songs/Son_of_a_Wolf.mp3" controls id="music"></audio>
                     <li>Sanctified With Dynamite</li>
+                    <audio src="songs/Sanctified_with_Dynamite.mp3" controls id="music"></audio>
                     <li>Amen & Attack</li>
+                    <audio src="songs/Amen_Attack.mp3" controls id="music"></audio>
                     <li>We Drink Your Blood</li>
+                    <audio src="songs/We_Drink_Your_Blood.mp3" controls id="music"></audio>
                     <li>Demons Are A Girls Best Friend</li>
+                    <audio src="songs/Demons_Are_a_Girls_Best_Friend.mp3" controls id="music"></audio>
             </div>
             <div class="minigroup3">
                 <p class="groupname">DISTURBED</p>
                     <li>Down With The Sickness</li>
+                    <audio src="songs/Down_With_the_Sickness.mp3" controls id="music"></audio>
                     <li>Stricken</li>
+                    <audio src="songs/Stricken.mp3" controls id="music"></audio>
                     <li>Stupify</li>
+                    <audio src="songs/Stupify.mp3" controls id="music"></audio>
                     <li>Prayer</li>
+                    <audio src="songs/Prayer.mp3" controls id="music"></audio>
                     <li>Inside The Fire</li>
+                    <audio src="songs/Inside_The_Fire.mp3" controls id="music"></audio>
             </div>
         </div>
     </section>
-    <script src='script.js'></script>    
+    <section class="Slider">
+        <div class="carousel_item">
+            <iframe class= "video"  src="https://www.youtube.com/embed/fWgI8NuEXik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="title"></p>
+        </div>
+        <div class="carousel_item">
+            <iframe class= "video"  src="https://www.youtube.com/embed/ma4g3R0S2Zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="title"></p>
+        </div>
+        <div class="carousel_item">
+            <iframe class= "video"  src="https://www.youtube.com/embed/NeQM1c-XCDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="title"></p>
+        </div>
+        <div class="carousel_item">
+            <iframe class= "video"  src="https://www.youtube.com/embed/cHAsg2k7iI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="title"></p>
+        </div>
+        <div class="carousel_item">
+            <iframe class= "video"  src="https://www.youtube.com/embed/ei3IaJDgZGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="title"></p>
+        </div>
+        <div class="carousel_item">
+            <iframe class= "video"  src="https://www.youtube.com/embed/i7R6_7e10QM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="title"></p>
+        </div>      
+    </section>
+
+    <footer>
+        <h1>Присоединяйтесь к нашему сообществу</h1>
+        <div class="footerA">
+            <div class="footerB">
+                <img src="images/facebook.svg" alt="whatsap" class="icon">
+                <p>+7(928)166-60-40</p>
+            </div>
+            <div class="footerC">
+                <img src="images/twitter.svg" class="icon" alt="twitter.png">
+                <img src="images/inst.svg" class="icon" alt="inst.svg">
+                <img src="images/face.svg" class="icon" alt="facebook.png">
+                <img src="images/vk.svg" class="icon" alt="vk.png">
+            </div>
+        </div>
+    </footer>
+    <script src="anime.min.js"></script>
+    <script src='script.js'></script> 
 </body>
-<footer>
-    <h1>Присоединяйтесь к нашему сообществу</h1>
-    <div class="footerA">
-        <div class="footerB">
-            <img src="facebook.svg" alt="whatsap" class="icon">
-            <p>+7(928)166-60-40</p>
-        </div>
-        <div class="footerC">
-            <img src="twitter.svg" class="icon" alt="twitter.png">
-            <img src="inst.svg" class="icon" alt="inst.svg">
-            <img src="face.svg" class="icon" alt="facebook.png">
-            <img src="vk.svg" class="icon" alt="vk.png">
-        </div>
-    </div>
-</footer>
 </html>
